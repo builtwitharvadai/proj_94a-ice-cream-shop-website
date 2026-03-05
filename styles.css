@@ -295,6 +295,189 @@ section {
     border: 0;
 }
 
+/* Flavors Page Hero */
+.flavors-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.flavors-hero h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: var(--spacing-sm);
+}
+
+.flavors-hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+/* Flavors Section */
+.flavors-section {
+    background-color: var(--bg-color);
+}
+
+.flavors-section h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.section-description {
+    text-align: center;
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Flavors Grid */
+.flavors-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+/* Flavor Card */
+.flavor-card {
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    position: relative;
+}
+
+.flavor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.flavor-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-color: var(--bg-light);
+}
+
+.flavor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: var(--transition);
+}
+
+.flavor-card:hover .flavor-image img {
+    transform: scale(1.05);
+}
+
+.flavor-content {
+    padding: var(--spacing-md);
+}
+
+.flavor-content h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.flavor-content p {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Seasonal Section */
+.seasonal-section {
+    background-color: var(--bg-light);
+}
+
+.seasonal-section h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.flavor-card.seasonal {
+    border: 2px solid var(--accent-color);
+}
+
+.seasonal-badge {
+    position: absolute;
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    font-size: 0.85rem;
+    z-index: 10;
+}
+
+/* Toppings Section */
+.toppings-section {
+    background-color: var(--bg-color);
+}
+
+.toppings-section h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Toppings Grid */
+.toppings-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.topping-item {
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.topping-item:hover {
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.topping-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    margin-bottom: var(--spacing-sm);
+    background-color: var(--bg-color);
+}
+
+.topping-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.topping-item h3 {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.topping-item p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
 /* Footer */
 footer {
     background-color: var(--text-color);
@@ -338,6 +521,22 @@ footer p {
     .map-container {
         padding-bottom: 75%;
     }
+
+    .flavors-hero h2 {
+        font-size: 1.75rem;
+    }
+
+    .flavors-hero p {
+        font-size: 1rem;
+    }
+
+    .flavor-image {
+        height: 200px;
+    }
+
+    .toppings-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Tablet - 768px and up */
@@ -372,6 +571,18 @@ footer p {
 
     .map-container {
         padding-bottom: 50%;
+    }
+
+    .flavors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .toppings-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flavors-hero h2 {
+        font-size: 2.75rem;
     }
 }
 
@@ -408,5 +619,17 @@ footer p {
 
     .map-container {
         padding-bottom: 45%;
+    }
+
+    .flavors-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .toppings-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .flavors-hero h2 {
+        font-size: 3rem;
     }
 }
