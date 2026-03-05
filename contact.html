@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Sweet Dreams Ice Cream - Find our location, hours, phone number, email, and social media. Send us a message through our contact form.">
-    <meta name="keywords" content="contact ice cream shop, Sweet Dreams location, ice cream shop hours, send message">
+    <meta name="keywords" content="contact ice cream shop, Sweet Dreams location, ice cream shop hours, send message, contact form">
+    <meta name="author" content="Sweet Dreams Ice Cream">
+
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="Contact Us - Sweet Dreams Ice Cream">
+    <meta property="og:description" content="Get in touch with Sweet Dreams Ice Cream. Find our location, hours, and contact information. We'd love to hear from you!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?w=1200&h=630">
+    <meta property="og:url" content="https://sweetdreamsicecream.com/contact.html">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us - Sweet Dreams Ice Cream">
+    <meta name="twitter:description" content="Get in touch with Sweet Dreams Ice Cream. Find our location, hours, and contact information. We'd love to hear from you!">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?w=1200&h=630">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
     <title>Contact - Sweet Dreams Ice Cream</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -68,16 +87,16 @@
                 <div class="social-media">
                     <h3>Follow Us</h3>
                     <div class="social-icons">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
                             <i class="fab fa-facebook"></i>
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to our YouTube channel">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -92,22 +111,22 @@
                 <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required aria-required="true">
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required aria-required="true">
                     </div>
 
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
+                        <input type="text" id="subject" name="subject" required aria-required="true">
                     </div>
 
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
                     </div>
 
                     <button type="submit" class="submit-button">Send Message</button>
